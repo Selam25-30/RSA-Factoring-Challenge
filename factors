@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+"""Factorize as many numbers as possible into a product of two smaller numbers."""
+
+from sys import argv
+
+def factorize(n):
+	"""it factorize a number ino two integers"""
+	p = 2
+
+	if (n < 2):
+		return
+
+	print()
+	print(n, "<- n bef")
+
+	while n % p:
+		p += 1
+	print("{:.0f}={:.0f}*{:.0f}".format(n, n / p, p))
+        print(n, "<- n-aft")
+        print()
+
+if len (argv) != 2
+	exit()
+
+try:
+	with open (argv[1]) as file
+	line = file.readline()
+
+	while line != "":
+		n = int (line.split('\n')[0])
+		factorize(n)
+		line = file.readline()
+except:
+	pass
